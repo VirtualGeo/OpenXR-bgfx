@@ -29,8 +29,8 @@ To deploy on the hololens device :
 > mkdir build/arm64_uwp<br>
 > cd build/arm64_uwp<br>
 > cmake ../.. -DCMAKE_SYSTEM_NAME=WindowsStore -DCMAKE_SYSTEM_VERSION=10.0 -DBGFX_BUILD_EXAMPLES=OFF -DBGFX_BUILD_TOOLS=OFF -DCMAKE_INSTALL_PREFIX=../../bgfx-install/arm64_uwp -A arm64<br>
-> cmake --build .
-> cmake --install ../../bgfx-install/arm64_uwp
+> cmake --build .<br>
+> cmake --install ../../bgfx-install/arm64_uwp<br>
 
 
 To deploy on the hololens emulator :
@@ -38,5 +38,5 @@ To deploy on the hololens emulator :
 > mkdir build/x64_uwp<br>
 > cd build/x64_uwp<br>
 > cmake ../.. -DCMAKE_SYSTEM_NAME=WindowsStore -DCMAKE_SYSTEM_VERSION=10.0 -DBGFX_BUILD_EXAMPLES=OFF -DBGFX_BUILD_TOOLS=OFF -DCMAKE_INSTALL_PREFIX=../../bgfx-install/x64_uwp<br>
-> cmake --build .
-> cmake --install ../../bgfx-install/x64_uwp
+> cmake --build .<br>
+> cmake --install ../../bgfx-install/x64_uwp<br>
